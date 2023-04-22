@@ -5,6 +5,7 @@ const server=http.createServer((req,res)=>{
     res.end("hello world");
 });
 
-server.listen(8080,()=>{
-    console.log("server running in 8080 port");
+const PORT =process.env.PORT || 3000;
+server.listen(PORT,()=>{
+    console.log("server running in 3000 port");
 })
